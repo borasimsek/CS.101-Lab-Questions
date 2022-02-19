@@ -33,10 +33,18 @@ public class Lab2 {
     */
     public static void question1() {
         //Get the product price as integer and the type of the product as integer.
-        
+        int productPrice = 0;
+
+        int productType = 0;
+
+        double tax = 0;
 
         //If the type is 172
             // tax = Pprıce * 0.18
+        if(productType == 172){
+            tax = productPrice * 0.18;
+        }
+        
 
         //If the type is 188
             // tax = Pprıce * 0.8
