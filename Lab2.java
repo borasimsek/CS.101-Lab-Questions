@@ -8,7 +8,9 @@ public class Lab2 {
     }
 
 
-    /*
+    
+    public static void question1() {
+        /*
     The total price of a product is the price of the
     product plus the sales tax. 
     
@@ -33,8 +35,6 @@ public class Lab2 {
     will also display a message if the type of the product
     is incorrect
     */
-    public static void question1() {
-
         String PRODUCT_TYPT_WARNING = "The type is not valid !";
 
         //Get the product price as integer and the type of the product as integer.
