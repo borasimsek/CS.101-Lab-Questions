@@ -34,16 +34,23 @@ public class Lab2 {
     is incorrect
     */
     public static void question1() {
+
+        String PRODUCT_TYPT_WARNING = "The type is not valid !";
+
         //Get the product price as integer and the type of the product as integer.
-
-
         Scanner input = new Scanner(System.in);
         System.out.print("The price of the product : ");
+
         Integer productPrice = input.nextInt();
         System.out.print("The type of the product : ");
+
         Integer productType = input.nextInt();
         double tax = 0;
+
         input.close();
+
+
+
         //If the type is 172
             // tax = Pprıce * 0.18
         if(productType == 172){
@@ -53,21 +60,22 @@ public class Lab2 {
 
         //If the type is 188
             // tax = Pprıce * 0.8
-        if(productType == 188){
+        else if(productType == 188){
             tax = productPrice * 0.8;
         }
         //If the type is 196
             // tax = Pprıce * 0
-            if(productType == 196){
-                tax = productPrice * 0;
-            }
+        else if(productType == 196){
+            tax = productPrice * 0;
+        }
         // ıf the type other
             // warn the user
-            if(productType != 172 && productType != 188 && productType != 196 ){
-                String warning = "The type is not valid !";
-                System.out.println(warning);
-   
-            }
+        else{
+            
+            System.out.println(PRODUCT_TYPT_WARNING);
+            // Fınısh the method
+            return;
+        }
         // Dısplay the result
         double totalCost = tax + productPrice;
         System.out.println("The total cost is :" +totalCost);
