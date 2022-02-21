@@ -7,8 +7,6 @@ public class Lab2 {
 
     }
 
-
-    
     public static void question1() {
         /*
     The total price of a product is the price of the
@@ -81,4 +79,6 @@ public class Lab2 {
         System.out.println("The total cost is :" +totalCost);
     }
     
+    
+
 }
