@@ -1,9 +1,10 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Lab1{
 
     public static void main(String[] args) {
-        question9();
+        question3();
         
     }
 
@@ -56,7 +57,7 @@ public class Lab1{
         */
 
         //Get the inputs of height and radius
-
+        
         Scanner inputs1 = new Scanner(System.in);
         System.out.println("Radius= ");
         double radius = inputs1.nextDouble();
@@ -66,7 +67,7 @@ public class Lab1{
         inputs1.close();
         //Calculate the volume of the cone
         
-        double Volume = 3.14 * radius * radius *height /3;
+        double Volume = Math.PI * radius * radius *height /3;
 
         //Display the result.
         System.out.println("Volume is "+Volume);
